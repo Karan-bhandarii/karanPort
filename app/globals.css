@@ -1,0 +1,23 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: white;
+  color: black;
+  transition:
+    background-color 0.7s ease,
+    color 0.7s ease;
+}
+
+html.dark body {
+  background: black;
+  color: white;
+}
